@@ -1,0 +1,376 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--navy_blue);
+}
+/* reset styles=============================================================================================== */
+ul,
+a {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+}
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* visually-hidden=============================================================================================== */
+.visually_hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* colors=============================================================================================== */
+:root {
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy_blue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --light_slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navy_blue_modal: #2e2f42;
+  --grey: #2e2f42;
+  --white: #fff;
+  --dairy: #fcfcfc;
+}
+/* container 🤔=============================================================================================== */
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1158px;
+  padding: 0 15px;
+}
+
+/* navigation 🤩=============================================================================================== */
+.nav_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  padding: 24px 76px 24px 0;
+  /* typography */
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris);
+}
+.part_logo {
+  color: var(--navy_blue_modal);
+}
+.nav_pages {
+  display: flex;
+}
+.nav_pages_item {
+  padding: 24px 0;
+  margin-right: 76px;
+
+  /* typography */
+  font-family: inherit, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav_address_table {
+  display: flex;
+}
+.nav_address_li:last-child {
+  margin-right: 0;
+}
+.nav_address_li {
+  margin-right: 40px;
+}
+.nav_address_item {
+  padding: 24px 0;
+  /* typography */
+  font-family: inherit, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+  transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* made all the nav hover 😁=============================================================================================== */
+
+.nav_pages_item:hover,
+.nav_pages_item:focus,
+.nav_address_item:hover,
+.nav_address_item:focus {
+  color: var(--ocean);
+}
+
+/* hero 😞 ======================================================================================*/
+.hero {
+  background-color: #2e2f42;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.hero_title {
+  padding: 200px 0 48px;
+  display: block;
+  margin: 0 auto;
+  width: 496px;
+  /* typography */
+  font-family: inherit, sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  color: var(--white);
+}
+.hero_button {
+  display: inline-block;
+  margin-bottom: 188px;
+  padding: 16px 32px;
+  user-select: none;
+  /* typography */
+  font-family: inherit, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+
+  /* visual  */
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: var(--iris);
+  border-radius: 4px;
+  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero_button:hover,
+.hero_button:focus {
+  background-color: var(--ocean);
+  /* outline: none; */
+}
+/* features 😎 ======================================================================================*/
+.feature_table {
+  padding: 120px 0;
+  display: flex;
+}
+.feature_item {
+  text-align: start;
+  margin-right: 24px;
+  width: 25%;
+}
+.feature_item:last-child {
+  margin-right: 0;
+}
+.feature_header {
+  margin-bottom: 8px;
+  /* typography; */
+  font-family: inherit, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy_blue);
+}
+.feature_text {
+  font-family: inherit, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+/* Our Team 🫠======================================================================================*/
+.team {
+  width: 100%;
+  background-color: var(--cloud);
+  padding-bottom: 120px;
+}
+.team_header {
+  padding: 120px 0 72px 0;
+  /* typogrphy */
+  font-family: inherit, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.111;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--navy_blue);
+}
+.team_table {
+  display: flex;
+}
+.team_item {
+  margin-right: 24px;
+
+  border-radius: 0 0 4px 4px;
+  width: 264px;
+  height: 380px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
+}
+
+.team_item_image {
+  margin-bottom: 32px;
+}
+.team_item_header {
+  margin-bottom: 8px;
+  /* typogrphy */
+  font-family: inherit, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--navy_blue);
+}
+.team_item_post {
+  /* typogrphy */
+  font-family: inherit, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+  text-align: center;
+}
+
+/* Portfolio 🫣 ======================================================================================*/
+.portfolio_header {
+  padding: 120px 0 0 0;
+  /* typogrphy */
+  font-family: inherit, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.111;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--navy_blue);
+}
+.portfolio_table {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 72px 0 120px 0;
+}
+.porfolio_item {
+  flex-basis: calc((1128px - 48px) / 3);
+  margin-right: 24px;
+  margin-top: 48px;
+  border: 1px solid #e7e9fc;
+  background-color: var(--white);
+}
+.porfolio_item:nth-child(3n) {
+  margin-right: 0;
+}
+.porfolio_item:nth-child(-n + 3) {
+  margin-top: 0px;
+}
+
+.portfolio_photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 32px;
+}
+.portfolio_item_header {
+  padding-left: 16px;
+  margin-bottom: 8px;
+  /* typogrphy */
+  font-family: inherit, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy_blue);
+}
+.portfolio_item_text {
+  margin-bottom: 32px;
+  padding-left: 16px;
+  font-family: inherit, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+/* footer🤕  ======================================================================================*/
+footer {
+  background-color: var(--navy_blue);
+}
+
+.logo_f {
+  display: inline-block;
+  padding: 100px 0 0 0;
+  /* typography */
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris);
+}
+.part_logo_f {
+  color: var(--cloud);
+}
+
+.footer_paragraph {
+  padding: 16px 0 100px 0;
+  width: 264px;
+  /* typugraphy */
+  font-family: inherit, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--cloud);
+}
