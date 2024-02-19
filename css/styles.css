@@ -118,7 +118,7 @@ li {
 }
 
 .nav_pages_item {
-  margin-right: 76px;
+  margin-right: 40px;
 }
 .nav_pages_item:last-child {
   margin-right: 0;
@@ -170,16 +170,17 @@ li {
 
 /* hero 😞 ======================================================================================*/
 .hero {
+  padding: 188px 0;
   background-color: #2e2f42;
   width: 100%;
   height: 100%;
   text-align: center;
 }
 .hero_title {
-  padding: 200px 0 48px;
+  padding-bottom: 48px;
   display: block;
   margin: 0 auto;
-  width: 496px;
+  max-width: 496px;
   /* typography */
   font-family: inherit, sans-serif;
   font-weight: 700;
@@ -189,10 +190,11 @@ li {
   color: var(--white);
 }
 .hero_button {
-  display: inline-block;
-  margin-bottom: 188px;
+  display: block;
   padding: 16px 32px;
   user-select: none;
+  min-width: 169px;
+  margin: 0 auto;
   /* typography */
   font-family: inherit, sans-serif;
   font-weight: 500;
@@ -213,8 +215,11 @@ li {
   /* outline: none; */
 }
 /* features 😎 ======================================================================================*/
-.feature_table {
+
+.features {
   padding: 120px 0;
+}
+.feature_table {
   display: flex;
 }
 .feature_item {
@@ -250,7 +255,7 @@ li {
   padding: 120px 0;
 }
 .team_header {
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   /* typogrphy */
   font-family: inherit, sans-serif;
   font-weight: 700;
@@ -266,7 +271,6 @@ li {
 }
 .team_item {
   margin-right: 24px;
-
   border-radius: 0 0 4px 4px;
   width: 264px;
   height: 380px;
@@ -275,9 +279,16 @@ li {
   background: #fff;
 }
 
+.team_item:last-child {
+  margin-right: 0;
+}
+
 .team_item_image {
-  margin-bottom: 32px;
   display: block;
+}
+
+.team_worker {
+  padding: 32px 0;
 }
 .team_item_header {
   margin-bottom: 8px;
@@ -308,7 +319,7 @@ li {
 
 .portfolio_header {
   /* typogrphy */
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   font-family: inherit, sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -326,25 +337,28 @@ li {
 .porfolio_item {
   flex-basis: calc((1128px - 48px) / 3);
   margin-right: 24px;
-  margin-top: 48px;
-  border: 1px solid #e7e9fc;
+  margin-bottom: 48px;
   background-color: var(--white);
 }
 .porfolio_item:nth-child(3n) {
   margin-right: 0;
 }
-.porfolio_item:nth-child(-n + 3) {
-  margin-top: 0px;
+.porfolio_item:nth-child(n + 4) {
+  margin-bottom: 0px;
 }
 
 .portfolio_photo {
   display: block;
   max-width: 100%;
   height: auto;
-  margin-bottom: 32px;
+}
+
+.app_data_container {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .portfolio_item_header {
-  padding-left: 16px;
   margin-bottom: 8px;
   /* typogrphy */
   font-family: inherit, sans-serif;
@@ -356,7 +370,6 @@ li {
 }
 .portfolio_item_text {
   margin-bottom: 32px;
-  padding-left: 16px;
   font-family: inherit, sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -365,13 +378,14 @@ li {
   color: var(--slate);
 }
 /* footer🤕  ======================================================================================*/
-footer {
+.footer {
+  padding: 100px 0;
   background-color: var(--navy_blue);
 }
 
 .logo_f {
   display: inline-block;
-  padding: 100px 0 16px 0;
+  margin-bottom: 16px;
   /* typography */
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -386,7 +400,6 @@ footer {
 }
 
 .footer_paragraph {
-  padding-bottom: 100px;
   width: 264px;
   /* typugraphy */
   font-family: inherit, sans-serif;
