@@ -13,10 +13,12 @@ body {
 }
 /* reset styles=============================================================================================== */
 ul,
+ol,
 a {
   list-style: none;
   text-decoration: none;
   padding: 0;
+  margin: 0px;
 }
 button {
   padding: 0;
@@ -34,6 +36,7 @@ h5,
 h6,
 p,
 ul,
+ol,
 li {
   margin: 0;
   padding: 0;
@@ -79,20 +82,25 @@ li {
 }
 
 /* navigation 🤩=============================================================================================== */
+.header_underline {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .nav_flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .navigation {
-  text-decoration: none;
   display: flex;
+  text-decoration: none;
   justify-content: center;
   align-items: center;
 }
 
 .logo {
-  padding: 24px 76px 24px 0;
+  margin-right: 76px;
+  padding: 24px 0 24px 0;
   /* typography */
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -269,6 +277,7 @@ li {
 
 .team_item_image {
   margin-bottom: 32px;
+  display: block;
 }
 .team_item_header {
   margin-bottom: 8px;
