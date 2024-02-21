@@ -131,7 +131,7 @@ li {
   padding: 24px 0;
 
   /* typography */
-  font-family: inherit, sans-serif;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
@@ -152,7 +152,8 @@ li {
 .nav_address_item {
   padding: 24px 0;
   /* typography */
-  font-family: inherit, sans-serif;
+  font-style: normal;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -178,15 +179,13 @@ li {
   text-align: center;
 }
 .hero_title {
-  padding-bottom: 48px;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 48px auto;
   max-width: 496px;
   /* typography */
-  font-family: inherit, sans-serif;
   font-weight: 700;
   font-size: 56px;
-  line-height: 1.7;
+  line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--white);
 }
@@ -197,7 +196,7 @@ li {
   min-width: 169px;
   margin: 0 auto;
   /* typography */
-  font-family: inherit, sans-serif;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -234,7 +233,7 @@ li {
 .feature_header {
   margin-bottom: 8px;
   /* typography; */
-  font-family: inherit, sans-serif;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -242,7 +241,6 @@ li {
   color: var(--navy_blue);
 }
 .feature_text {
-  font-family: inherit, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -258,7 +256,7 @@ li {
 .team_header {
   margin-bottom: 72px;
   /* typogrphy */
-  font-family: inherit, sans-serif;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.111;
@@ -294,7 +292,7 @@ li {
 .team_item_header {
   margin-bottom: 8px;
   /* typogrphy */
-  font-family: inherit, sans-serif;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -304,7 +302,7 @@ li {
 }
 .team_item_post {
   /* typogrphy */
-  font-family: inherit, sans-serif;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -321,7 +319,7 @@ li {
 .portfolio_header {
   /* typogrphy */
   margin-bottom: 72px;
-  font-family: inherit, sans-serif;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.111;
@@ -362,7 +360,6 @@ li {
 .portfolio_item_header {
   margin-bottom: 8px;
   /* typogrphy */
-  font-family: inherit, sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -370,8 +367,6 @@ li {
   color: var(--navy_blue);
 }
 .portfolio_item_text {
-  margin-bottom: 32px;
-  font-family: inherit, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -403,7 +398,7 @@ li {
 .footer_paragraph {
   width: 264px;
   /* typugraphy */
-  font-family: inherit, sans-serif;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
